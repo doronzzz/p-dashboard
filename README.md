@@ -3,17 +3,18 @@
 pre-requirements:
 
 - NODE JS -
+https://nodejs.org 
 
-nodejs.org 
 - GRUNT CLI
+https://gruntjs.com
 
-gruntjs.com
 - BOWER
+https://bower.io
 
-bower.io
 - YOEMON
 http://yeoman.io/
 
-- YEOMAN NG GENERATOR  - npm install -g generator-cg-angular
+- YEOMAN NG GENERATOR 
+npm install -g generator-cg-angular
 https://github.com/cgross/generator-cg-angular
 
