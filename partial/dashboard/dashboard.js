@@ -8,7 +8,7 @@ angular.module('pontis').controller('DashboardCtrl',function($scope){
 					handle: 'span'
 				}
 			};
-
+	$scope.barVals = '30,50,70,100,102,80,95,75,70,40,30,35,40,30,50,70,100,102,80,95,75,70,40,30,35,40,30,50,70,100,102,80,95,75,70,40,30,35,40,70,40,30,35,40,30,50,70,100,102,80,95,75,70,40,30,35,40';
 	$scope.dashboard = {
 			id: '1',
 			name: 'Home',
