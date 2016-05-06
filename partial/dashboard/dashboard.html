@@ -29,15 +29,7 @@
 				</c3chart>
 
 
-				<c3chart ng-if="item.name == 'Behavior' " bindto-id="chart1_{{item.name}}">
-                	<chart-size chart-width="200" chart-height="225"/>
-					  <chart-column column-id="data 1"
-					          column-values="30,200,100,400,150,250"
-					          column-type="spline"/>
-					  <chart-column column-id="data 2"
-					                column-values="50,20,10,40,15,25"
-					                column-type="line"/>
-				</c3chart>
+				<d3-funnel ng-if="item.name == 'Behavior' "></d3-funnel>
 
 				<div ng-if="item.name == 'targeting' " >
 					

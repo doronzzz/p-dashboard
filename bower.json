@@ -25,6 +25,7 @@
     "c3": "^0.4.10",
     "angular-gridster": "^0.13.5",
     "c3-angular": "^1.2.0",
-    "radial-progress-chart": "^0.0.3"
+    "radial-progress-chart": "^0.0.3",
+    "d3-funnel": "^0.7.5"
   }
 }
