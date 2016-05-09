@@ -10,12 +10,18 @@
             					<div class="col-md-4">
             						<h4 class="text-muted mute-text">Events</h4>
             					</div>
-            					<div class="col-md-6">
-            						<select class="form-control">
-            							<option>Event 1</option>
-            							<option>Event 2</option>
-            							<option>Event 3</option>
-            						</select>
+            					<div class="col-md-8">
+            						<div class="dropdown pull-right">
+									  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									    Event Type
+									    <span class="caret"></span>
+									  </button>
+									  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									    <li><a href="#">Event 1</a></li>
+									    <li><a href="#">Event 2</a></li>
+									    <li><a href="#">Event 3</a></li>
+									  </ul>
+									</div>
             					</div>
             				</div>
             			</div>
@@ -25,7 +31,7 @@
 			            		</chart-axis-x>
 			            		<chart-axis-y show="false">
 			            		</chart-axis-y>
-		                	<chart-size chart-width="495" chart-height="215"/>
+		                	<chart-size chart-width="550" chart-height="215"/>
 							  <chart-column column-id="data 1"
 							          column-values="30,200,100,400,150,250"
 							          column-type="spline"/>
@@ -48,12 +54,12 @@
 			            		</chart-axis-x>
 			            		<chart-axis-y show="false">
 			            		</chart-axis-y>
-		                	<chart-size chart-width="495" chart-height="215"/>
+		                	<chart-size chart-width="550" chart-height="215"/>
 							  <chart-column column-id="data 1"
-							          column-values="30,200,100,400,150,250"
+							          column-values="150,22,60,320,400,250"
 							          column-type="spline"/>
 							  <chart-column column-id="data 2"
-							                column-values="50,20,10,40,15,25"
+							                column-values="150,10,80,12,200,72"
 							                column-type="line"/>
 							</c3chart>
 
