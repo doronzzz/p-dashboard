@@ -1,4 +1,4 @@
-angular.module('pontis', ['ui.bootstrap','ui.router','ngAnimate','gridster','gridshore.c3js.chart']);
+angular.module('pontis', ['ui.bootstrap','ui.router','ngAnimate','gridshore.c3js.chart']);
 
 angular.module('pontis').config(function($stateProvider, $urlRouterProvider) {
 

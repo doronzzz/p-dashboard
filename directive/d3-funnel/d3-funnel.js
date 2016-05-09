@@ -8,10 +8,9 @@ angular.module('pontis').directive('d3Funnel', function() {
         templateUrl: 'directive/d3-funnel/d3-funnel.html',
         link: function(scope, element, attrs, fn) {
         	 var data = [
-		        ['Plants',     5000],
-		        ['Flowers',    2500],
-		        ['Perennials', 200],
-		        ['Roses',      50],
+		        ['Total Base',     5000 ,"#86ADE8"],
+		        ['Available',    2500 ,"#64BBE8"],
+		        ['Assigned', 200 ,"#66C2CD"]
 		    ];
 		    var options = {};
 		    // var selector = $(element).find('.myFunnel');

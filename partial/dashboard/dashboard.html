@@ -1,67 +1,165 @@
 <div class="col-md-12" ng-controller="DashboardCtrl">
 
 
-<div gridster="gridsterOptions" class="" style="height: 475px; "><!-- ngIf: gridster.movingItem -->
-        <div>
-            <!-- ngRepeat: item in standardItems -->
-            <div gridster-item="item" ng-repeat="item in dashboard.widgets" class="grid-item">
-            	<span class="drag"></span>
+<div><!-- ngIf: gridster.movingItem -->
 
-            	<c3chart ng-if="item.name == 'exposure' " bindto-id="chart1_{{item.name}}">
-                	<chart-size chart-width="1100px" chart-height="225"/>
-					    <chart-column column-id="bar1"
-                  		column-name="Bar 1"
-                  		column-color="#00A6EA"
-                  		column-values="{{barVals}}"
-                	  	column-type="bar"/>
-				    <chart-bar ratio="0.8"/>
-				</c3chart>
+            	<div class="row">
+            		<div style="height:275px;width: 582px;" class="cell pull-left">
+            			<div class="header">
+            				<div class="row">
+            					<div class="col-md-4">
+            						<h4 class="text-muted mute-text">Events</h4>
+            					</div>
+            					<div class="col-md-6">
+            						<select class="form-control">
+            							<option>Event 1</option>
+            							<option>Event 2</option>
+            							<option>Event 3</option>
+            						</select>
+            					</div>
+            				</div>
+            			</div>
+            			<div class="body">
+            				<c3chart bindto-id="chart3_">
+            					<chart-axis-x show="false">
+			            		</chart-axis-x>
+			            		<chart-axis-y show="false">
+			            		</chart-axis-y>
+		                	<chart-size chart-width="495" chart-height="215"/>
+							  <chart-column column-id="data 1"
+							          column-values="30,200,100,400,150,250"
+							          column-type="spline"/>
+							  <chart-column column-id="data 2"
+							                column-values="50,20,10,40,15,25"
+							                column-type="line"/>
+							</c3chart>
 
+            			</div>
+            			
 
-				<c3chart ng-if="item.name == 'Rate' " bindto-id="chart1_{{item.name}}">
-                	<chart-size chart-width="200" chart-height="225"/>
-					  <chart-column column-id="data 1"
-					          column-values="30,200,100,400,150,250"
-					          column-type="spline"/>
-					  <chart-column column-id="data 2"
-					                column-values="50,20,10,40,15,25"
-					                column-type="line"/>
-				</c3chart>
+            		</div>
+            		<div class="cell pull-right" style="height:275px;width: 582px;">
+            			<div class="header">
+            				<h4 class="text-muted mute-text">Benefits</h4>
+            			</div>
+            			<div class="body">
+            				<c3chart bindto-id="chart5_">
+            					<chart-axis-x show="false">
+			            		</chart-axis-x>
+			            		<chart-axis-y show="false">
+			            		</chart-axis-y>
+		                	<chart-size chart-width="495" chart-height="215"/>
+							  <chart-column column-id="data 1"
+							          column-values="30,200,100,400,150,250"
+							          column-type="spline"/>
+							  <chart-column column-id="data 2"
+							                column-values="50,20,10,40,15,25"
+							                column-type="line"/>
+							</c3chart>
 
+            			</div>
+            		</div>
+            	</div>
 
-				<d3-funnel ng-if="item.name == 'Behavior' "></d3-funnel>
+            	<div class="row" style="margin-top:6px;">
+            		<div class="cell pull-left" style="width:748px; height:275px;">
+            			<div class="header">
+            				<h4 class="text-muted mute-text">Exposure</h4>
+            			</div>
+            			<div class="body">
+            				<div class="row">
+	            				<c3chart bindto-id="chart1_">
+				            		<chart-legend show-legend="false"/>
+				            		
+				            		<chart-axis-x show="false">
+				            			
+				            		</chart-axis-x>
 
-				<div ng-if="item.name == 'targeting' " >
+				            		<chart-axis-y show="false"/>
+				                	<chart-size chart-width="680px" chart-height="85"/>
+									    <chart-column column-id="bar1"
+				                  		column-name="Bar 1"
+				                  		column-color="#00A6EA"
+				                  		column-values="{{barVals}}"
+				                	  	column-type="bar"/>
+								    <chart-bar ratio="0.8"/>
+								</c3chart>
+            				</div>
+            				<div class="row">
+            					<div class="col-md-4">
+								<c3chart bindto-id="chart1_1">
+				            		<chart-legend show-legend="false"/>
+				            		
+				            		<chart-axis-x show="false">
+				            			
+				            		</chart-axis-x>
+
+				            		<chart-axis-y show="false"/>
+				                	<chart-size chart-width="220px" chart-height="85"/>
+									    <chart-column column-id="bar1"
+				                  		column-name="Bar 1"
+				                  		column-color="#00A6EA"
+				                  		column-values="{{barVals}}"
+				                	  	column-type="bar"/>
+								    <chart-bar ratio="0.8"/>
+								</c3chart>
+            					</div>
+            					<div class="col-md-4">
+								<c3chart bindto-id="chart1_2">
+				            		<chart-legend show-legend="false"/>
+				            		
+				            		<chart-axis-x show="false">
+				            			
+				            		</chart-axis-x>
+
+				            		<chart-axis-y show="false"/>
+				                	<chart-size chart-width="220px" chart-height="85"/>
+									    <chart-column column-id="bar1"
+				                  		column-name="Bar 1"
+				                  		column-color="#00A6EA"
+				                  		column-values="{{barVals}}"
+				                	  	column-type="bar"/>
+								    <chart-bar ratio="0.8"/>
+								</c3chart>
+            					</div>
+            					<div class="col-md-4">
+								<c3chart bindto-id="chart1_3">
+				            		<chart-legend show-legend="false"/>
+				            		
+				            		<chart-axis-x show="false">
+				            			
+				            		</chart-axis-x>
+
+				            		<chart-axis-y show="false"/>
+				                	<chart-size chart-width="220px" chart-height="85"/>
+									    <chart-column column-id="bar1"
+				                  		column-name="Bar 1"
+				                  		column-color="#00A6EA"
+				                  		column-values="{{barVals}}"
+				                	  	column-type="bar"/>
+								    <chart-bar ratio="0.8"/>
+								</c3chart>
+            					</div>
+            				</div>
+            			</div>
+
+            		</div>
+            		<div class="cell pull-right"  style="width:415px; height:275px;">
+            			<div class="header">
+            				<h4 class="text-muted mute-text">Targeting</h4>
+            				<div class="cell-desc">
+            					Last Decisioning: 10/01/2016 10:00
+            				</div>
+            			</div>
+            			<div class="body">
+            				<d3-funnel ></d3-funnel>
+            			</div>
+            			
+            		</div>
+            	</div>
 					
-					<div class="row">
-						<div class="col-md-4">
-							<radial-progress-bar></radial-progress-bar>
-						</div>
-						<div class="col-md-4">
-							<radial-progress-bar></radial-progress-bar>
-						</div>
-						<div class="col-md-4">
-							<radial-progress-bar></radial-progress-bar>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-md-4">
-							<radial-progress-bar></radial-progress-bar>
-						</div>
-						<div class="col-md-4">
-							<radial-progress-bar></radial-progress-bar>
-						</div>
-						<div class="col-md-4">
-							<radial-progress-bar></radial-progress-bar>
-						</div>
-					</div>
-					
-				</div>
 				
-               
-            </div><!-- end ngRepeat: item in standardItems -->
-        </div>
+        
     </div>
 
 
