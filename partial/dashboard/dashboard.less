@@ -1,4 +1,5 @@
 .cell{
+	position:relative;
 	background: white;
     border: 1px solid #BDBDBD;
     padding: 14px;
@@ -8,4 +9,53 @@
 h4.text-muted {
     font-weight: 300;
     font-size: 24px;
+}
+
+.cell .col-md-4 {
+    position: relative;
+}
+
+.bar-chart-meta {
+    position: absolute;
+    top: 28px;
+    right: 35px;
+}
+
+.bar-chart-meta .header {
+    font-size: 24px;
+}
+
+.cell .col-md-4:nth-child(2) {
+    border-right: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+}
+
+div#chart1_ {
+    padding: 0px 15px;
+    margin-bottom:18px;
+}
+
+.cell .header .bar-chart-meta{
+	float:right;
+}
+
+.bar-chart-meta .meta-name.text-muted {
+    font-size: 12px;
+    font-weight: 200;
+    position: relative;
+    top: -4px;
+}
+
+.col-md-6 .header {
+    font-size: 16px;
+}
+
+.col-md-6 .header .text-muted {
+    font-size: 14px;
+}
+
+.line-seperate {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #c4c4c4;
 }

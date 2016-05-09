@@ -65,6 +65,14 @@
             		<div class="cell pull-left" style="width:748px; height:275px;">
             			<div class="header">
             				<h4 class="text-muted mute-text">Exposure</h4>
+            				<div class="bar-chart-meta">
+									<div class="header">
+										2,344
+									</div>
+									<div class="meta-name text-muted">
+										Total exposures per hour
+									</div>
+								</div>
             			</div>
             			<div class="body">
             				<div class="row">
@@ -76,7 +84,7 @@
 				            		</chart-axis-x>
 
 				            		<chart-axis-y show="false"/>
-				                	<chart-size chart-width="680px" chart-height="85"/>
+				                	<chart-size chart-width="675" chart-height="85"/>
 									    <chart-column column-id="bar1"
 				                  		column-name="Bar 1"
 				                  		column-color="#00A6EA"
@@ -95,14 +103,25 @@
 				            		</chart-axis-x>
 
 				            		<chart-axis-y show="false"/>
-				                	<chart-size chart-width="220px" chart-height="85"/>
+				                	<chart-size chart-width="120px" chart-height="85"/>
 									    <chart-column column-id="bar1"
 				                  		column-name="Bar 1"
 				                  		column-color="#00A6EA"
-				                  		column-values="{{barVals}}"
+				                  		column-values="{{smallBarVals}}"
 				                	  	column-type="bar"/>
 								    <chart-bar ratio="0.8"/>
 								</c3chart>
+
+
+								<div class="bar-chart-meta">
+									<div class="header">
+										2,344
+									</div>
+									<div class="meta-name text-muted">
+										Mobile
+									</div>
+								</div>
+
             					</div>
             					<div class="col-md-4">
 								<c3chart bindto-id="chart1_2">
@@ -113,14 +132,25 @@
 				            		</chart-axis-x>
 
 				            		<chart-axis-y show="false"/>
-				                	<chart-size chart-width="220px" chart-height="85"/>
+				                	<chart-size chart-width="120px" chart-height="85"/>
 									    <chart-column column-id="bar1"
 				                  		column-name="Bar 1"
 				                  		column-color="#00A6EA"
-				                  		column-values="{{barVals}}"
+				                  		column-values="{{smallBarVals}}"
 				                	  	column-type="bar"/>
 								    <chart-bar ratio="0.8"/>
 								</c3chart>
+
+
+								<div class="bar-chart-meta">
+									<div class="header">
+										2,344
+									</div>
+									<div class="meta-name text-muted">
+										Mobile
+									</div>
+								</div>
+
             					</div>
             					<div class="col-md-4">
 								<c3chart bindto-id="chart1_3">
@@ -131,14 +161,24 @@
 				            		</chart-axis-x>
 
 				            		<chart-axis-y show="false"/>
-				                	<chart-size chart-width="220px" chart-height="85"/>
+				                	<chart-size chart-width="120px" chart-height="85"/>
 									    <chart-column column-id="bar1"
 				                  		column-name="Bar 1"
 				                  		column-color="#00A6EA"
-				                  		column-values="{{barVals}}"
+				                  		column-values="{{smallBarVals}}"
 				                	  	column-type="bar"/>
 								    <chart-bar ratio="0.8"/>
 								</c3chart>
+
+								<div class="bar-chart-meta">
+									<div class="header">
+										2,344
+									</div>
+									<div class="meta-name text-muted">
+										Mobile
+									</div>
+								</div>
+
             					</div>
             				</div>
             			</div>
@@ -147,12 +187,27 @@
             		<div class="cell pull-right"  style="width:415px; height:275px;">
             			<div class="header">
             				<h4 class="text-muted mute-text">Targeting</h4>
-            				<div class="cell-desc">
+            				<div class="cell-desc text-muted">
             					Last Decisioning: 10/01/2016 10:00
             				</div>
             			</div>
             			<div class="body">
             				<d3-funnel ></d3-funnel>
+            				<div class="line-seperate"></div>
+            				<div class="row">
+            					<div class="col-md-6">
+            						<div class="header">
+            							3,345,3444
+            							<span class="text-muted">Excluded</span>
+        							</div>
+            					</div>
+            					<div class="col-md-6">
+            						<div class="header">
+            							3,345,3444
+            							<span class="text-muted">Failures</span>
+        							</div>
+            					</div>
+            				</div>
             			</div>
             			
             		</div>
