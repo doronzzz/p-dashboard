@@ -67,7 +67,7 @@
             		</div>
             	</div>
 
-            	<div class="row" style="margin-top:6px;">
+            	<div class="row " style="margin-top:6px;">
             		<div class="cell pull-left exposure" style="width:748px; height:275px;">
             			<div class="header">
             				<h4 class="text-muted mute-text">Exposure</h4>
@@ -76,12 +76,12 @@
 										2,344
 									</div>
 									<div class="meta-name text-muted">
-										Total exposures per hour
+										Total exposures / hour
 									</div>
 								</div>
             			</div>
             			<div class="body">
-            				<div class="row">
+            				<div class="row main-bar-chart">
 	            				<c3chart bindto-id="chart1_">
 				            		<chart-legend show-legend="false"/>
 				            		
@@ -90,7 +90,7 @@
 				            		</chart-axis-x>
 
 				            		<chart-axis-y show="false"/>
-				                	<chart-size chart-width="675" chart-height="85"/>
+				                	<chart-size chart-width="675" chart-height="95"/>
 									    <chart-column column-id="bar1"
 				                  		column-name="Bar 1"
 				                  		column-color="#00A6EA"
@@ -99,7 +99,7 @@
 								    <chart-bar ratio="0.8"/>
 								</c3chart>
             				</div>
-            				<div class="row">
+            				<div class="row bottom-bar-charts">
             					<div class="col-md-4">
 								<c3chart bindto-id="chart1_1">
 				            		<chart-legend show-legend="false"/>
@@ -109,13 +109,13 @@
 				            		</chart-axis-x>
 
 				            		<chart-axis-y show="false"/>
-				                	<chart-size chart-width="120px" chart-height="85"/>
+				                	<chart-size chart-width="125" chart-height="65"/>
 									    <chart-column column-id="bar1"
 				                  		column-name="Bar 1"
 				                  		column-color="#00A6EA"
 				                  		column-values="{{smallBarVals}}"
 				                	  	column-type="bar"/>
-								    <chart-bar ratio="0.8"/>
+								    <chart-bar ratio="0.6"/>
 								</c3chart>
 
 
@@ -138,13 +138,13 @@
 				            		</chart-axis-x>
 
 				            		<chart-axis-y show="false"/>
-				                	<chart-size chart-width="120px" chart-height="85"/>
+				                	<chart-size chart-width="125" chart-height="65"/>
 									    <chart-column column-id="bar1"
 				                  		column-name="Bar 1"
 				                  		column-color="#00A6EA"
 				                  		column-values="{{smallBarVals}}"
 				                	  	column-type="bar"/>
-								    <chart-bar ratio="0.8"/>
+								    <chart-bar ratio="0.6"/>
 								</c3chart>
 
 
@@ -167,13 +167,13 @@
 				            		</chart-axis-x>
 
 				            		<chart-axis-y show="false"/>
-				                	<chart-size chart-width="120px" chart-height="85"/>
+				                	<chart-size chart-width="125" chart-height="65"/>
 									    <chart-column column-id="bar1"
 				                  		column-name="Bar 1"
 				                  		column-color="#00A6EA"
 				                  		column-values="{{smallBarVals}}"
 				                	  	column-type="bar"/>
-								    <chart-bar ratio="0.8"/>
+								    <chart-bar ratio="0.6"/>
 								</c3chart>
 
 								<div class="bar-chart-meta">
@@ -197,10 +197,11 @@
             					Last Decisioning: 10/01/2016 10:00
             				</div>
             			</div>
-            			<div class="body">
-            				<d3-funnel ></d3-funnel>
-            				<div class="line-seperate"></div>
-            				<div class="row">
+            			<div class="body"> 
+            				<d3-funnel height="150" width="200"></d3-funnel>
+            				
+            				<div class="row funnel-footer">
+            					<div class="line-seperate"></div>
             					<div class="col-md-6">
             						<div class="header">
             							3,345,3444
